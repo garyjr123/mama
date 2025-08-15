@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mama🤍</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-image: url("bg.webp");
+			background-size: 100% 100%;
+			background-attachment: fixed;
+		}
+		@media(width < 600px){
+		img{
+			position: relative;
+			width: 90px;
+			/* height: 90px; */
+			top: 30px;
+			left: 40px;
+			border-radius: 10px;
+			box-shadow: 2px 4px 10px;
+		}
+		button{
+			background: rgb(189, 123, 134);
+			border: none;
+			padding: 20px;
+			width: 100px;
+			box-shadow: 2px 4px 10px;
+			border-radius: 10px;
+			position: relative;
+			top:430px;
+		}
+		#cover{
+			width: 100%;
+			height: 100vh;
+			background-image: url("env.jpg");
+			background-size: 100% 100%;
+			position: absolute;
+			z-index: 10;
+			transition: .7s;
+			font-size: 2rem;
+		}
+		b{
+			font-family: cursive;
+		}
+		}
+	</style>
+</head>
+<body>
+	<div onclick="go()" id="cover">
+		<center>
+			<b>Click ma</b>
+		</center>
+	</div>
+	<img src="mama.jpg" alt="">
+<center>
+	<a href="intro.html">
+		<button>Next</button>
+	</a>
+</center>
+</body>
+<script>
+	function go(){
+		document.getElementById("cover").style='transition: .9s;postion:absolute;height:0px; font-size:0px;';
+		// document.getElementById("cover").style='transition: .9s;postion:absolute;top:-100px;';
+	}
+</script>
+</html>
